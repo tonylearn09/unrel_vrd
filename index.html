@@ -1,10 +1,11 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <title>Results for Visual relationship detection and Unrel retrieval<title>
+  <title>Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
-<!--<meta property="og:image" content="https://junyanz.github.io/CycleGAN/images/teaser_fb.jpg"/>-->
-<meta property="og:title" content="Results for Visual relationship detection and Unrel retrieval" />
+<meta property="og:image" content="https://junyanz.github.io/CycleGAN/images/teaser_fb.jpg"/>
+<meta property="og:title" content="Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks" />
 
 <script src="lib.js" type="text/javascript"></script>
 <script src="popup.js" type="text/javascript"></script>
@@ -45,15 +46,21 @@ BODY {
 
 <body>
 
-<h2 align='center'>Relationship detection results</h2>
+<div id="primarycontent">
+<center><h1>Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</h1></center>
+
+<br>
+
+
+<h2 align='center'>Applications in our Paper</h2>
 
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center" valign="middle"><h2>Seen triplets relationship detection</h2>
-      <p font-size:14px> Results among the top scored triplets detected for each relation. Relationships are correctly recognized if both the objects and their relation match ground truth (in green), else the triplet is incorrect (in red). Also, there are some examples for missing or incomplete annotations(in yellow)<br> <a href="https://tonylearn09.github.io/unrel_vrd/vrd_seen_det_correct.html">[More for correct]</a>,  <a href="https://tonylearn09.github.io/unrel_vrd/vrd_seen_det_wrong.html">[More for incorrect]</a>, <a href="https://tonylearn09.github.io/unrel_vrd/vrd_seen_det_missing.html">[More for missing]</a></p></td>
+    <td align="center" valign="middle"><h2>Monet Paintings &#8594 Photos</h2>
+    <p font-size:14px> Mapping Monet paintings to landscape photographs from Flickr: <br> <a href="https://taesung89.github.io/cyclegan/2017/03/25/monet-to-photo-summary.html">[Best results]</a>,  <a href="https://taesung89.github.io/cyclegan/2017/03/25/monet-to-photo-trainset.html">[Random training set results]</a>, <a href="https://taesung89.github.io/cyclegan/2017/03/25/monet-to-photo-testset.html">[Random test set results]</a></p></td>
   </tr>
   <tr>
-      <td align="center" valign="middle"><a href="images/vrd_results.jpg"><img src="images/vrd_results.jpg"  width=1000> </a></td>
+      <td align="center" valign="middle"><a href="images/painting2photo.jpg"><img src="images/painting2photo.jpg"  width=1000> </a></td>
   </tr>
 </table>
 <p>&nbsp;</p>
@@ -61,22 +68,19 @@ BODY {
 
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center" valign="middle"><h2>Unseen triplets relationship detection</h2>
-    <p> For unseen triplets in test time (the format is the same as above)<br> <a href="https://tonylearn09.github.io/unrel_vrd/vrd_unseen_det_correct.html">[More for correct]</a> <br> <a href="https://tonylearn09.github.io/unrel_vrd/vrd_unseen_det_wrong.html">[More for incorrect]</a>, <a href="https://tonylearn09.github.io/unrel_vrd/vrd_unseen_det_missing.html">[More for missing]</a></p></td>
+    <td align="center" valign="middle"><h2>Collection Style Transfer</h2>
+    <p> Transferring input images into artistic styles of Monet, Van Gogh, Ukiyo-e, and Cezanne. <br> <a href="https://taesung89.github.io/cyclegan/2017/03/25/style-transfer-supplemental.html">[Results on the author's personal photos]</a> <br> <a href="https://taesung89.github.io/cyclegan/2017/03/25/style-transfer-train.html">[Random training set results]</a>, <a href="https://taesung89.github.io/cyclegan/2017/03/25/style-transfer-test.html">[Random test set results]</a></p></td>
   </tr>
   <tr>
-      <td align="center" valign="middle"><a href="images/vrd_unseen_results.jpg"><img src="images/vrd_unseen_results.jpg"  width=1000> </a></td>
+      <td align="center" valign="middle"><a href="images/photo2painting.jpg"><img src="images/photo2painting.jpg"  width=1000> </a></td>
   </tr>
 </table>
 <p>&nbsp;</p>
-
-<h2 align='center'>Unrel retrieval results</h2>
-
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center" valign="middle"><h2>Unrel</h2>
-    <p>  Top 3 retrieved pairs of boxes for a set of UnRel triplet queries (first line is best). The pair is marked as positive (green) if the candidate subject and object boxes coincide with a ground truth subject and object boxes with IoU ≥ 0.3. <br><a href="https://tonylearn09.github.io/unrel_vrd/unrel_correct_retrieval.html">[More good results]</a>,  <a href="https://tonylearn09.github.io/unrel_vrd/unrel_wrong_retrieval.html">[More bad results]</a>
-    </p></td>
+    <td align="center" valign="middle"><h2>Object Transfiguration</h2>
+    <p> Object transfiguration between horses and zebras: <br><a href="https://taesung89.github.io/cyclegan/2017/03/25/horse-to-zebra-supplemental-best.html">[Best results]</a>,  <a href="https://taesung89.github.io/cyclegan/2017/03/25/horse-to-zebra-supplemental-train.html">[Random training set results]</a>, <a href="https://taesung89.github.io/cyclegan/2017/03/25/horse-to-zebra-supplemental-test.html">[Random test set results]</a> <br>
+    Object transfiguration between apples and oranges: <br><a href="https://taesung89.github.io/cyclegan/2017/03/25/apple-to-orange-supplemental-best.html">[Best results]</a>, <a href="https://taesung89.github.io/cyclegan/2017/03/25/supplemental-apple-to-orange-train.html">[Random training set results]</a>,  <a href="https://taesung89.github.io/cyclegan/2017/03/25/supplemental-apple-to-orange-test.html">[Random test set results]</a></p></td>
   </tr>
   <tr>
       <td align="center" valign="middle"><a href="images/unrel_retrieval.jpg"><img src="images/unrel_retrieval.jpg"  width=1000> </a></td>
@@ -84,34 +88,33 @@ BODY {
 </table>
 <p>&nbsp;</p>
 
-<h2 align='center'>Predicate retrieval results</h2>
+
 
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center" valign="middle"><h2>Seen predicate retrieval</h2>
-      <p> Given ground truth object boxes, I show examples among the top 100 scored triplets for some action relations retrieved by our model. The triplet is correctly recognized if the relation matches ground truth (in green), else the triplet is incorrect (in red). For yellow, it means e the ground truth is erroneous, either missing or incomplete. I also put gt under wrong prediction</p>
-    </p></td>
+    <td align="center" valign="middle"><h2>Season Transfer</h2>
+    <p> Transferring seasons of Yosemite in the Flickr photos: <br><a href="https://taesung89.github.io/cyclegan/2017/03/25/yosemite-supplemental-best.html">[Best results]</a>,  <a href="https://taesung89.github.io/cyclegan/2017/03/25/yosemite-supplemental-train.html">[Random training set results]</a>, <a href="https://taesung89.github.io/cyclegan/2017/03/25/yosemite-supplemental-test.html">[Random test set results]</a> </p></td>
   </tr>
   <tr>
-      <td align="center" valign="middle"><a href="images/predicate_retrieval.jpg"><img src="images/predicate_retrieval.jpg"  width=1000> </a></td>
+      <td align="center" valign="middle"><a href="images/season.jpg"><img src="images/season.jpg"  width=1000> </a></td>
   </tr>
 </table>
 <p>&nbsp;</p>
 
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center" valign="middle"><h2>Unseen triplets retrieval</h2>
-    <p> Similar to the above, the ground truth box and object classes are given. I use the unseen triplets to retrive the relation<br><a href="https://tonylearn09.github.io/unrel_vrd/unseen_predicate_correct.html">[Correct Results]</a>, <a href="https://tonylaern09.github.io/unrel_vrd/unseen_predicate_wrong.html">[Wrong Results]</a>, <a href="https://tonylearn09.github.io/unrel_vrd/unseen_predicate_missing.html">[Missing Results]</a>
+    <td align="center" valign="middle"><h2>Photo Enhancement</h2>
+    <p> iPhone photos &#8594 DSLR photos: generating photos with shallower depth of field. <br><a href="https://taesung89.github.io/cyclegan/2017/03/25/iphone-to-dslr-flower-best.html">[Best Results]</a>, <a href="https://taesung89.github.io/cyclegan/2017/03/25/iphone-to-dslr-flower-train-random.html">[Random training set results]</a>, <a href="https://taesung89.github.io/cyclegan/2017/03/25/iphone-to-dslr-flower-test-random.html">[Random test set results]</a>
     </p></td>
   </tr>
   <tr>
-      <td align="center" valign="middle"><a href="images/unseen_predicate_retrieval.jpg"><img src="images/unseen_predicate_retrieval.jpg"  width=1000> </a></td>
+      <td align="center" valign="middle"><a href="images/photo_enhancement.jpg"><img src="images/photo_enhancement.jpg"  width=1000> </a></td>
   </tr>
 </table>
 <p>&nbsp;</p>
 
 
-<br>
+
 
 <div style="display:none">
 <!-- GoStats JavaScript Based Code -->
