@@ -1,1 +1,129 @@
-My Page
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+  <title>Results for Visual relationship detection and Unrel retrieval<title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<!--<meta property="og:image" content="https://junyanz.github.io/CycleGAN/images/teaser_fb.jpg"/>-->
+<meta property="og:title" content="Results for Visual relationship detection and Unrel retrieval" />
+
+<script src="lib.js" type="text/javascript"></script>
+<script src="popup.js" type="text/javascript"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53682931-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+// redefining default features
+var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
+</script>
+<link media="all" href="glab.css" type="text/css" rel="StyleSheet">
+<style type="text/css" media="all">
+IMG {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FLOAT: right;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+#primarycontent {
+	MARGIN-LEFT: auto; ; WIDTH: expression(document.body.clientWidth >
+1000? "1000px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width:
+1000px }
+BODY {
+	TEXT-ALIGN: center
+}
+</style>
+
+<meta content="MSHTML 6.00.2800.1400" name="GENERATOR"><script src="b5m.js" id="b5mmain" type="text/javascript"></script></head>
+
+<body>
+
+<h2 align='center'>Relationship detection results</h2>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle"><h2>Seen triplets relationship detection</h2>
+      <p font-size:14px> Results among the top scored triplets detected for each relation. Relationships are correctly recognized if both the objects and their relation match ground truth (in green), else the triplet is incorrect (in red). Also, there are some examples for missing or incomplete annotations(in yellow)<br> <a href="https://tonylearn09.github.io/unrel_vrd/vrd_seen_det_correct.html">[More for correct]</a>,  <a href="https://tonylearn09.github.io/unrel_vrd/vrd_seen_det_wrong.html">[More for incorrect]</a>, <a href="https://tonylearn09.github.io/unrel_vrd/vrd_seen_det_missing.html">[More for missing]</a></p></td>
+  </tr>
+  <tr>
+      <td align="center" valign="middle"><a href="images/vrd_results.jpg"><img src="images/vrd_results.jpg"  width=1000> </a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle"><h2>Unseen triplets relationship detection</h2>
+    <p> For unseen triplets in test time (the format is the same as above)<br> <a href="https://tonylearn09.github.io/unrel_vrd/vrd_unseen_det_correct.html">[More for correct]</a> <br> <a href="https://tonylearn09.github.io/unrel_vrd/vrd_unseen_det_wrong.html">[More for incorrect]</a>, <a href="https://tonylearn09.github.io/unrel_vrd/vrd_unseen_det_missing.html">[More for missing]</a></p></td>
+  </tr>
+  <tr>
+      <td align="center" valign="middle"><a href="images/vrd_unseen_results.jpg"><img src="images/vrd_unseen_results.jpg"  width=1000> </a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+<h2 align='center'>Unrel retrieval results</h2>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle"><h2>Unrel</h2>
+    <p>  Top 3 retrieved pairs of boxes for a set of UnRel triplet queries (first line is best). The pair is marked as positive (green) if the candidate subject and object boxes coincide with a ground truth subject and object boxes with IoU ≥ 0.3. <br><a href="https://tonylearn09.github.io/unrel_vrd/unrel_correct_retrieval.html">[More good results]</a>,  <a href="https://tonylearn09.github.io/unrel_vrd/unrel_wrong_retrieval.html">[More bad results]</a>
+    </p></td>
+  </tr>
+  <tr>
+      <td align="center" valign="middle"><a href="images/unrel_retrieval.jpg"><img src="images/unrel_retrieval.jpg"  width=1000> </a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+<h2 align='center'>Predicate retrieval results</h2>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle"><h2>Seen predicate retrieval</h2>
+      <p> Given ground truth object boxes, I show examples among the top 100 scored triplets for some action relations retrieved by our model. The triplet is correctly recognized if the relation matches ground truth (in green), else the triplet is incorrect (in red). For yellow, it means e the ground truth is erroneous, either missing or incomplete. I also put gt under wrong prediction</p>
+    </p></td>
+  </tr>
+  <tr>
+      <td align="center" valign="middle"><a href="images/predicate_retrieval.jpg"><img src="images/predicate_retrieval.jpg"  width=1000> </a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle"><h2>Unseen triplets retrieval</h2>
+    <p> Similar to the above, the ground truth box and object classes are given. I use the unseen triplets to retrive the relation<br><a href="https://tonylearn09.github.io/unrel_vrd/unseen_predicate_correct.html">[Correct Results]</a>, <a href="https://tonylaern09.github.io/unrel_vrd/unseen_predicate_wrong.html">[Wrong Results]</a>, <a href="https://tonylearn09.github.io/unrel_vrd/unseen_predicate_missing.html">[Missing Results]</a>
+    </p></td>
+  </tr>
+  <tr>
+      <td align="center" valign="middle"><a href="images/unseen_predicate_retrieval.jpg"><img src="images/unseen_predicate_retrieval.jpg"  width=1000> </a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+
+<br>
+
+<div style="display:none">
+<!-- GoStats JavaScript Based Code -->
+<script type="text/javascript" src="http://gostats.com/js/counter.js"></script>
+<script type="text/javascript">_gos='c3.gostats.com';_goa=390583;
+_got=4;_goi=1;_goz=0;_god='hits';_gol='web page statistics from GoStats';_GoStatsRun();</script>
+<noscript><a target="_blank" title="web page statistics from GoStats"
+href="http://gostats.com"><img alt="web page statistics from GoStats"
+src="http://c3.gostats.com/bin/count/a_390583/t_4/i_1/z_0/show_hits/counter.png"
+style="border-width:0" /></a></noscript>
+</div>
+<!-- End GoStats JavaScript Based Code -->
+</body></html
+>
+
